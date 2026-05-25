@@ -6,7 +6,7 @@ from client.gemini_mcp_client import ask
 # -------------------------------------------------
 
 st.set_page_config(
-    page_title="Alteryx FP&A Variance Assistant",
+    page_title="Enterprise FP&A AI Assistant.",
     page_icon="📊",
     layout="centered",
 )

@@ -1,4 +1,4 @@
-# FP&A Budget vs Actual Variance Assistant
+# Streamlit Enterprise AI Agent
 
 ## Overview
 
@@ -103,7 +103,6 @@ BVA-ADK/
 │   └── agent.py              # Optional agent orchestration
 │
 ├── requirements.txt          # UI and client dependencies
-├── sa-key.json               # GCP service account key (local only)
 └── README.md                 # This document
 ```
 

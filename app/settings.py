@@ -1,8 +1,8 @@
 from pydantic import BaseModel
 
 class Settings(BaseModel):
-    project_id: str = "alteryxone-dev-7393"
-    dataset: str = "bva_variance_uc"
+    project_id: str = "env-based placeholders"
+    dataset: str = "env-based placeholders"
     location: str = "US"
 
 settings = Settings()

@@ -1,0 +1,16 @@
+FROM python:3.11-slim
+
+ENV PYTHONUNBUFFERED=1
+ENV GOOGLE_CLOUD_PROJECT=alteryxone-dev-7393
+ENV GOOGLE_CLOUD_LOCATION=us-central1
+
+WORKDIR /app
+
+# Copy MCP requirements FIRST
+COPY app/requirements.mcp.txt ./requirements.mcp.txt
+RUN pip install --no-cache-dir -r requirements.mcp.txt
+
+# Copy MCP application code
+COPY app ./app
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
